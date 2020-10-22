@@ -1,0 +1,87 @@
+.basket
+    &__inner
+        margin-top: 32px
+    &__title
+        font-weight: 700
+        font-size: 20px
+        line-height: 27px
+        color: $black
+        margin-bottom: 24px
+    &__items
+    &__item
+        padding: 20px 25px 20px 20px
+        display: flex
+        border: 1px solid #ECF0FA
+        &-inner
+            display: flex
+            align-items: center
+        input[type=checkbox]
+            padding: 3px
+        img
+            margin-left: 24px
+            width: 100%
+        p
+            margin-bottom: 0px
+        &-wrap
+            width: 45%
+            margin-left: 24px
+        &-subtitle
+            color: #8F8F8F
+            font-weight: 400
+            font-size: 12px
+            line-height: 16px
+        &-clicks
+            display: flex
+            margin-top: 40px
+        &-click
+            cursor: pointer
+            color: #345BBE
+            font-weight: 600
+            font-size: 14px
+            line-height: 19px
+            & + .basket__item-click
+                margin-left: 24px
+                padding-left: 24px
+                border-left: 1px solid #C4C4C4
+        &-cost
+            font-weight: 600
+            margin-left: 4%
+            color: #345BBE
+            font-size: 14px
+            line-height: 16px
+        &-costDiscount
+            text-decoration: line-through
+            font-weight: 400
+            color: #AFAFAF
+            font-size: 10px
+            margin-top: 8px
+    &__order
+        &-title
+            margin-top: 32px
+            font-weight: 700
+            font-size: 22px
+            line-height: 30px
+            color: #505050
+        &-wrap
+            display: flex
+            justify-content: space-between
+            margin-top: 18px
+            font-weight: 400
+            font-size: 16px
+            line-height: 22px
+            color: $black
+            border-bottom: 1px solid $main-color
+            padding-bottom: 18px
+        &-allCost
+            margin-top: 18px
+            display: flex
+            justify-content: space-between
+            color: #345BBE
+            font-weight: 600
+            font-size: 16px
+            line-height: 22px
+    &__btn
+        width: 100%
+        padding-top: 12px
+        padding-bottom: 13px
+        border-radius: 0 !important

@@ -1,0 +1,324 @@
+.product
+    padding-top: 32px
+    &__header
+        &-link
+            cursor: pointer
+            font-weight: 600
+            font-size: 12px
+            line-height: 16px
+            color: #345BBE
+            &:hover
+                color: #345BBE
+        &-btns
+            display: flex
+            margin-top: 20px
+        &-btn
+            text-align: center
+            width: 96px
+            padding: 7px 13px
+            text-transform: uppercase
+            font-weight: 600
+            font-size: 12px
+            line-height: 16px
+        &-new
+            border: 1px solid #345BBE
+            color: #345bbe
+        &-discount
+            border: 1px solid #F63C41
+            color: #F63C41
+            margin-left: 16px
+        &-title
+            margin-top: 20px
+            font-weight: 700
+            font-size: 20px
+            line-height: 27px
+            color: $black
+        &-wrap
+            margin-top: 13px
+            display: flex
+            justify-content: space-between
+        &-productStocks
+            font-weight: 600
+            font-size: 15px
+            line-height: 20px
+            color: #10A600
+        &-productCode
+            display: flex
+            justify-content: flex-end
+            align-items: flex-end
+            font-weight: 400
+            font-size: 16px
+            line-height: 22px
+            span
+                margin-left: 5px
+        &-review
+            display: flex
+        &-reviewStar
+            img
+                width: 20px
+        &-reviewTxt
+            margin-left: 20px
+            margin-top: 3px
+            font-weight: 400
+            font-size: 16px
+            line-height: 22px
+            color: $main-color
+    &__about
+        margin-top: 20px
+        display: flex
+        justify-content: space-between
+        &-images
+            width: 60%
+            padding: 40px 30px 30px 50px
+            background: #FFFFFF
+            border: 1px solid #ECF0FA
+            box-sizing: border-box
+            &__inner
+                display: flex
+            &__choose
+                width: 20%
+                display: flex
+                flex-direction: column
+                align-items: flex-start
+                img
+                    & + img
+                        margin-top: 30px
+            &__chooseClick
+                display: flex
+                width: 80%
+                justify-content: center
+
+        &-descr
+            width: 37%
+            background: #FFFFFF
+            border: 1px solid #ECF0FA
+            box-sizing: border-box
+            padding: 24px 32px 100px 32px
+            &__title
+                font-weight: 600
+                color: $black
+                font-size: 14px
+                line-height: 19px
+                margin-bottom: 15px
+            &__wrap
+                display: flex
+                justify-content: space-between
+                font-weight: 400
+                font-size: 14px
+                line-height: 19px
+                p
+                    color: #818181
+                div
+                    color: $black
+                & + .product__about-descr__wrap
+                    margin-top: 10px
+            &__link
+                display: block
+                margin-top: 12px
+                text-decoration: underline !important
+                color: $main-color
+                font-weight: 400
+                font-size: 14px
+                line-height: 19px
+                &:hover
+                    color: $main-color
+            &__cost
+                margin-top: 20px
+                font-weight: 400
+                font-size: 30px
+                line-height: 40px
+                color: #F63C41
+                span
+                    text-decoration-line: line-through
+                    font-weight: 700
+                    font-size: 16px
+                    line-height: 22px
+                    color: #AFAFAF
+            &__btns
+                margin-top: 25px
+                display: flex
+                justify-content: space-between
+                flex-wrap: wrap
+            &__btn1
+                outline: none !important
+                width: 78%
+                padding: 12px 0
+                border-radius: 0px !important
+            &__btn2
+                outline: none !important
+                background: transparent
+                border: 1px solid $main-color
+                width: 15%
+                display: flex
+                justify-content: center
+                align-items: center
+            &__btn3
+                outline: none !important
+                font-weight: 600
+                font-size: 18px
+                line-height: 24px
+                border: 1px solid $main-color
+                color: $main-color
+                background: transparent
+                width: 100%
+                padding: 12px 0
+                margin-top: 25px
+    &__description
+        margin-top: 50px
+        &-items
+            display: flex
+            width: 100%
+            border-bottom: 1px solid $main-color
+        &-item
+            cursor: pointer
+            padding-top: 13px
+            padding-bottom: 13px
+            width: 33.3%
+            text-align: center
+            font-weight: 600
+            font-size: 18px
+            line-height: 25px
+            position: relative
+            transition: all 0.3s
+            span
+                transition: all 0.3s
+                top: 5px
+                position: absolute
+                font-weight: 600
+                font-size: 16px
+                line-height: 22px
+                color: #949494
+                padding-top: -10px
+                margin-left: 3px
+            &:hover
+                background: $main-color
+                color: $white
+                span
+                    color: $white
+        &-content
+            margin-top: 44px
+        &-outline
+            p
+                font-weight: 400
+                font-size: 14px
+                line-height: 19px
+                color: $black
+                span
+                    font-weight: 600
+                & + p
+                    margin-top: 35px
+        &-specification
+            width: 100%
+            display: flex
+            justify-content: space-between
+            &-wrap
+                width: 50%
+            &-box
+                display: flex
+                & + .product__description-specification-box
+                    margin-top: 24px
+            &-title
+                width: 230px
+                font-weight: 700
+                font-size: 14px
+                line-height: 19px
+                color: $black
+                margin-right: 10px
+            &-subtitle
+                line-height: 19px
+                font-weight: 400
+                font-size: 14px
+        &-reviews
+            &-item
+                margin-bottom: 24px
+                & + .product__description-reviews-item
+                    border-top: 1px solid #C4C4C4
+                    padding-top: 32px
+            &-acc
+                display: flex
+                align-items: center
+                img
+                    margin-right: 16px
+            &-name
+                font-weight: 600
+                font-size: 14px
+                line-height: 19px
+                color: $black
+            &-star
+                margin-top: 8px
+            &-date
+                margin-top: 4px
+                font-size: 12px
+                line-height: 16px
+                font-weight: 400
+                color: #C4C4C4
+            &-descr
+            &-txt
+                margin-top: 16px
+                font-weight: 400
+                font-size: 14px
+                color: $black
+                line-height: 19px
+            &-btn
+                width: 100%
+                padding-top: 12px
+                padding-bottom: 13px
+                border-radius: 0 !important
+                margin-top: 32px
+            &-rate
+                font-weight: 600
+                font-size: 18px
+                line-height: 25px
+                color: $black
+            &-analysis
+                margin-top: 23px
+                font-weight: 400
+                font-size: 16px
+                line-height: 22px
+                color: $black
+                .d-flex
+                    & + .d-flex
+                        margin-top: 25px
+                span
+                    width: 32%
+                .w
+                    width: 10%
+                    display: flex
+                    justify-content: flex-end
+            &-leaners
+                height: 8px
+                width: 55%
+                background: -webkit-linear-gradient(left, #F8894B 50%, #C4C4C4 50%)
+
+@media (max-width: 767px)
+    .product
+        &__header
+            &-wrap
+                flex-direction: column !important
+            &-review
+                margin-top: 10px !important
+                margin-bottom: 10px !important
+        &__about
+            flex-wrap: wrap !important
+            &-images
+                width: 100% !important
+                padding: 20px 20px 60px 20px !important
+                img
+                    width: 80%
+            &-descr
+                margin-top: 30px !important
+                width: 100% !important
+                padding-left: 20px !important
+                padding-right: 20px !important
+                padding-bottom: 60px !important
+                &__cost
+                    span
+                        display: block
+                        margin-top: 5px
+
+@media (min-width: 992px) and (max-width: 1199px)
+    .product
+        &__about
+            &-images
+                img
+                    width: 80% !important

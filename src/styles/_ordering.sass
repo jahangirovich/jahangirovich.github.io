@@ -1,0 +1,128 @@
+.ordering
+    margin-top: 32px
+    &__title
+        margin-bottom: 32px
+        font-weight: 700
+        font-size: 20px
+        line-height: 27px
+        color: $black
+    &__wrap
+        padding: 24px 32px
+        border: 1px solid #ECF0FA
+        box-sizing: border-box
+    &__wrap-title
+        color: $main-color
+        font-weight: 600
+        font-size: 16px
+        line-height: 22px
+    &__wrap-box
+        width: 30%
+        div
+            span
+                color: #818181
+                font-size: 14px
+                line-height: 19px
+                font-weight: 400
+    &__form
+        margin-top: 16px
+        display: flex
+        justify-content: space-between
+        font-weight: 400
+        font-size: 16px
+        line-height: 21px
+    &__input
+        margin-top: 8px
+        width: 100%
+        border: 1px solid #31AC80
+        box-sizing: border-box
+        padding: 13px
+        outline: none !important
+    &__delivery
+        margin-top: 32px
+        border: 1px solid #ECF0FA
+        padding-bottom: 24px
+    &__delivery-descr
+        background: $main-color
+        color: $white
+        font-weight: 400
+        font-size: 14px
+        padding: 9px 32px
+    &__delivery-inner
+        padding-left: 32px
+        padding-right: 32px
+        padding-top: 24px
+        display: flex
+        justify-content: space-between
+    &__delivery-wrap
+        width: 45%
+    &__delivery-maps
+        width: 50%
+    &__delivery-title
+        color: $main-color
+        font-weight: 600
+        font-size: 16px
+        line-height: 22px
+        margin-bottom: 16px
+    &__delivery-pb
+        & + .ordering__delivery-pb
+            margin-top: 25px
+    &__delivery-box
+        display: flex
+        justify-content: space-between
+        font-weight: 400
+        color: $black
+        font-size: 16px
+        div
+            width: 47%
+        span
+            color: #818181
+            font-size: 14px
+            font-weight: 400
+            display: inline
+    &__payment
+        margin-top: 24px
+    &__payment-inner
+        display: flex
+        justify-content: space-between
+    &__payment-wrap, &__payment-wrap2
+        border: 1px solid #ECF0FA
+        padding-top: 24px
+        padding-left: 32px
+        padding-bottom: 24px
+        padding-right: 32px
+    &__payment-wrap
+        width: 29%
+    &__payment-wrap2
+        width: 67%
+    &__payment-title
+        color: $main-color
+        font-weight: 600
+        font-size: 16px
+        line-height: 22px
+    &__payment-checkbox
+        color: $black
+        font-size: 16px
+        line-height: 22px
+        font-weight: 400
+        margin-top: 35px
+        input
+            margin-right: 14px
+    &__payment-wrap3
+        margin-top: 18px
+    &__payment-link
+        font-weight: 400
+        color: $black
+        font-size: 16px
+        line-height: 22px
+        & + .ordering__payment-link
+            margin-top: 16px
+        span
+            font-weight: 700
+    &__payment-btn
+        outline: none !important
+        margin-top: 24px
+        border-radius: 0 !important
+        width: 100%
+        padding-top: 12px
+        padding-bottom: 13px
+        font-size: 18px !important

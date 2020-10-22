@@ -1,0 +1,62 @@
+.menu
+    width: 25%
+    display: inline-block
+    &__blocks 
+        &__item
+            margin-bottom: 20px
+            &__header
+                padding-top: 10px
+                background-color: white;
+                padding-left: 15px
+                border-bottom: 1px solid white
+                transition: 0.3s
+                padding-bottom: 10px
+                cursor: pointer
+                padding-right: 12px
+                box-sizing: border-box
+                p   
+                    position: relative
+                    font-size: 16px
+                    line-height: 22px
+                    .cover
+                        position: absolute
+                        top: 0
+                        right: 0
+                    .right
+                        transform: rotate(45deg)
+                    .arrow
+                        border: solid gray
+                        border-width: 0 2px 2px 0
+                        display: inline-block
+                        padding: 4px
+            &__header:hover
+                border-bottom: 1px solid gray
+            &__blog
+                transition: height 0.4s
+                overflow: hidden
+                animation: height_anim 0.4s
+                &__categories
+                    padding: 12px
+                    transition: 0.3s
+                    &__texts
+                        font-size: 14px
+                        .container
+                            width: 100%
+                            color: #605A5A
+                        .checkmark
+                            width: 30px
+                            height: 30px
+                            background-color: #31AC80
+                &__categories:hover
+                    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.12);
+
+@keyframes height_anim
+  0%
+    height: 0%
+
+  50%
+    height: 50%
+  
+  100%
+    height: 100%
+  
